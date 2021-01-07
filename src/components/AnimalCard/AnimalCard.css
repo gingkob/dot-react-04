@@ -1,7 +1,30 @@
 h2 {
   justify-content: center;
   align-items: center;
-  color:tomato;
-  background-color: thistle;
+  color:whitesmoke;
+  background-color: tomato;
   text-align: center;
+  padding: 5px 20px;
+  font-weight: 300;
+}
+
+h3 {
+  font-weight: 400;
+  font-style: oblique;
+  margin-bottom: 10px;
+}
+
+.animal-wrapper {
+  border:solid black 1px;
+  padding: 10px;
+  width: 200px;
+}
+.animal-wrapper > div,
+.animal-wrapper > h4 {
+  padding-bottom: 5px;
+  margin:0;
+}
+
+.animal-wrapper > h2 {
+  margin: 0;
 }

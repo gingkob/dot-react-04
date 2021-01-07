@@ -9,6 +9,10 @@ function App() {
       {data.map(animal=><AnimalCard 
         key={animal.name}
         name={animal.name}
+        additional={animal.additional}
+        diet={animal.diet}
+        scientificName={animal.scientificName}
+        size={animal.size}
         />)}
     </div>
   );
