@@ -13,7 +13,7 @@ function App() {
       <h1>Animals</h1>
       {data.map(animal => <AnimalCard
         additional={animal.additional}
-        additionalInfo={animal.additional ? showAdditional : null}
+        additionalInfo={showAdditional}
         diet={animal.diet}
         key={animal.name}
         name={animal.name}
