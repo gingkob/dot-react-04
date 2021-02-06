@@ -1,12 +1,13 @@
 .wrapper {
   display: flex;
   justify-content: space-between;
-  margin-top: 0.5rem;
+  margin-top: 0.25rem;
   flex-wrap: wrap;
   padding: 20px;
 }
 
 .wrapper > h1 {
+  margin-top: auto;
   text-align: center;
   font-style: oblique;
   font-weight: 300;

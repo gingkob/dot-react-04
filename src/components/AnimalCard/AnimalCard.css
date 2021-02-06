@@ -28,3 +28,7 @@ h3 {
 .animal-wrapper > h2 {
   margin: 0;
 }
+
+.animal-wrapper > div {
+  margin-bottom: 10px;
+}
