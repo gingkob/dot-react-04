@@ -12,7 +12,7 @@ function AdditionalInfo(props) {
   const { imageSrc, imageDescription, notes, link, name, showAddInfo } = props.additionalInfo;
   const [showBox, setShowBox] = useState(false);
 
-  useEffect(() => { setShowBox(true) }, [name, showAddInfo])
+  useEffect(() => { name ? setShowBox(true) : setShowBox(false) }, [name, showAddInfo])
 
   return (
     showBox && <Box className='additioanal-info' mt={3}>
