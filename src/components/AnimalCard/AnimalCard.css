@@ -18,7 +18,12 @@ h3 {
   border:solid black 1px;
   padding: 10px;
   width: 200px;
+  margin-bottom: 10px;
+  /* margin-left: 0px; */
 }
+/* .animal-wrapper ~ .animal-wrapper {
+  margin-left: 10px;
+}  */
 .animal-wrapper > div,
 .animal-wrapper > h4 {
   padding-bottom: 5px;
@@ -27,8 +32,4 @@ h3 {
 
 .animal-wrapper > h2 {
   margin: 0;
-}
-
-.animal-wrapper > div {
-  margin-bottom: 10px;
 }
