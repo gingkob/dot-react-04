@@ -1,10 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import { Button } from '@material-ui/core';
+import Button from '@material-ui/core/Button';
 import './AnimalCard.css';
 
 export default function AnimalCard(props) {
   const { name, additional, additionalInfo, diet, scientificName, size } = props;
+  const [showAddInfo, setShowAddInfo] = useState(false);
+
+  const sendAddInfo = () => {
+    additionalInfo({ ...additional, name, showAddInfo })
+    setShowAddInfo(prevState => !prevState)
+  }
+
   return (
     <div className='animal-wrapper'>
       <h2>{name}</h2>
@@ -12,7 +19,7 @@ export default function AnimalCard(props) {
       <h4>{size} kg</h4>
       <div>{diet.join(', ')}.</div>
       {/* <button onClick={() => additional ? alert(JSON.stringify(additional)) : {}}>More...</button> */}
-      <Button variant="outlined" color='secondary' onClick={() => additionalInfo(additional)}>More...</Button>
+      <Button variant="outlined" color='primary' onClick={sendAddInfo}>More...</Button>
     </div>
   )
 }
