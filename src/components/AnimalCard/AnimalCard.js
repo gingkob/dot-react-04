@@ -19,7 +19,7 @@ export default function AnimalCard(props) {
       <h4>{size} kg</h4>
       <div>{diet.join(', ')}.</div>
       {/* <button onClick={() => additional ? alert(JSON.stringify(additional)) : {}}>More...</button> */}
-      <Button variant="outlined" color='primary' onClick={sendAddInfo}>More...</Button>
+      <Button variant="outlined" color='primary' size='small' style={{ fontStyle: 'oblique', textTransform: 'none', fontFamily: 'cursive', fontWeight: '100' }} onClick={sendAddInfo}>More...</Button>
     </div>
   )
 }
